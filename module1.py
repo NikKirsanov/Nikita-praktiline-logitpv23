@@ -1,6 +1,38 @@
 from math import *
 from random import *
 
+
+#14
+size = 10
+for i in range(1, size + 1):
+    for j in range(1, size + 1):
+        print(i * j, end=" ")
+    print()
+
+
+
+
+
+
+
+
+#12
+algsumma = float(input("Sisestage algne summa: "))
+aastad = int(input("Sisestage aastate arv: "))
+
+intressi_määr = 5
+
+total = algsumma
+print("{:<10s}{:<12s}{:<12s}{:<12s}".format("Aasta", "Algsumma", "Intress", "Aasta lõpuks"))
+for year in range(1, aastad + 1):
+    interest = total * intressi_määr / 100
+    total += interest
+    print("{:<10d}{:<12.2f}{:<12.2f}{:<12.2f}".format(year, algsumma, interest, total))
+
+
+
+
+
 for i in range(1, 11):
     ruut = i ** 2
     kuup = i ** 3
@@ -9,7 +41,7 @@ for i in range(1, 11):
 
 
 
-8
+#8
 paaris_arvud = 0
 paaritu_arvud = 0
 
@@ -25,7 +57,7 @@ print(f"\nPaaris arvude arv: {paaris_arvud}")
 print(f"Paaritu arvude arv: {paaritu_arvud}")
 
 
-10
+#10
 for arv in range(1, 101):
     if arv % 5 == 0:
         print(arv)
